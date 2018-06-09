@@ -3,8 +3,6 @@ const client = new Discord.Client();
 const bot = new Discord.Client();
 const config = require('./config.json');
 
-const token = "NDMyMDIxNzE2OTgyNTYyODE5.Dfy9Zg.baZZXvIGarDop16xozPlXbgUtWM";
-const prefix = "y!";
 
 client.login(token);
 
@@ -314,7 +312,7 @@ client.on("message", message => {
 		}
 
 		case "help" : {
-			message.channel.send("Hello thank you soo much for addming me here. I'm really glad to serve you for your server :smile: . So here are a list of commands which can be used through me  (Most are for entertainment :p) Hope you enjoy using me x3 . Have fun!! OwO I forgot to mention the Prefix for me is (y!) {Only the percentage symbol} Use this before every command for example y!say");
+			message.channel.send("Hello thank you soo much for addming me here. I'm really glad to serve you for your server :smile: . So here are a list of commands which can be used through me  (Most are for entertainment :p) Hope you enjoy using me x3 . Have fun!! OwO I forgot to mention the Prefix for me is (p!) {Only the percentage symbol} Use this before every command for example p!say");
             message.channel.send("```Available commands are :``` ",)
 			message.channel.send("```kick - Admistrator command : Ability to kick anyone with just 1 command```")
 			message.channel.send("```ban - Admistrator command : Ablity to ban anyone with just 1 command```")
@@ -342,13 +340,13 @@ client.on("message", message => {
 });
 
 bot.on('message', (message) => { 
-       if(message.content == 'y!hi') {
+       if(message.content == 'p!hi') {
 		   message.channel.sendMessage('Hello there sup?');
 		   }
 });
 
 bot.on('message', (message) => { 
-       if(message.content == 'y!sup') {
+       if(message.content == 'p!sup') {
 		   message.channel.sendMessage('Nothing much just speaking with you and with others in different servers :wink:');
 		   }
 });
